@@ -1,0 +1,70 @@
+body {
+    /* Use 'IM Fell DW Pica' para o corpo do texto */
+    font-family: 'IM Fell DW Pica', serif;
+    background-color: #1a0100;
+    color: #f0e6e6;
+    margin: 20px;
+    line-height: 1.8;
+}
+
+h1 {
+    /* Use 'Cinzel' ou 'Creepster' para o título principal */
+    font-family: 'Cinzel', serif; /* Ou tente 'Creepster', cursive; */
+    color: #8b0000;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+    border-bottom: 1px solid #4a0000;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+p {
+    /* Mantém 'IM Fell DW Pica' para os parágrafos */
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 1.15em;
+    line-height: 1.8;
+    margin-bottom: 1em;
+}
+
+/* Resto do CSS gótico-vampírico */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(30, 0, 0, 0.1) 0%, rgba(0,0,0,0.5) 80%, rgba(0,0,0,0.8) 100%);
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: -1;
+}
+
+a {
+    color: #bb86fc;
+    text-decoration: none;
+    border-bottom: 1px dashed #bb86fc;
+}
+
+a:hover {
+    color: #e0b0ff;
+    border-bottom: 1px solid #e0b0ff;
+}
+
+img {
+    /* Para manter a imagem responsiva e não estourar o layout */
+    max-width: 100%; /* Garante que a imagem nunca será maior que seu contêiner */
+    height: auto;    /* Mantém a proporção original da imagem automaticamente */
+
+    /* Dimensões específicas (você pode ajustar estes valores) */
+    width: 1400px;  /* Define uma largura fixa de 400 pixels */
+    /* height: 300px; */ /* Se você descomentar e usar, a imagem pode ser distorcida se o 'width' também for definido */
+
+    /* Estilos adicionais para o tema gótico */
+    display: block; /* Garante que a imagem se comporte como um bloco (ocupa sua própria linha) */
+    margin: 20px auto; /* Centraliza a imagem horizontalmente e adiciona margem acima/abaixo */
+    border: 2px solid #8b0000; /* Borda cor de sangue, para combinar */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8); /* Sombra para profundidade */
+    filter: sepia(50%) brightness(80%) contrast(120%); /* Efeito de filtro para envelhecer/escurecer */
+}
